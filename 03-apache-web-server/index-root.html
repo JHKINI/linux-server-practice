@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>양진희 | 자기소개 홈페이지( public_html )</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f7fb;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3f51b5, #6a5acd);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: white;
+      padding: 14px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #3f51b5;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 700;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #3f51b5;
+      margin-bottom: 18px;
+      font-size: 26px;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .photo-box {
+      width: 100%;
+      min-height: 240px;
+      border-radius: 16px;
+      background: #e8ecff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3f51b5;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: #eef1ff;
+      color: #3f51b5;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .mini-card {
+      background: #f8f9ff;
+      border-left: 5px solid #6a5acd;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .mini-card h3 {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      background: #e9ecf5;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .profile,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>안녕하세요, 양진희입니다.</h1>
+    <p>AI 소프트웨어를 배우며 데이터와 웹, 컴퓨터 비전 프로젝트를 경험하고 있습니다.</p>
+  </header>
+
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#skills">기술</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#goal">목표</a>
+    <a href="#contact">연락처</a>
+  </nav>
+
+  <section id="about">
+    <div class="card profile">
+      <div class="photo-box">
+        프로필 이미지<br />
+        넣는 공간
+      </div>
+      <div>
+        <h2>About Me</h2>
+        <p>
+          저는 현재 인공지능 소프트웨어 과정을 수강하며 Python, Java, 웹 개발,
+          데이터 분석, 컴퓨터 비전 기술을 학습하고 있습니다.
+          단순히 코드를 작성하는 것보다 문제를 발견하고, 팀원들과 조율하며,
+          실제로 작동하는 결과물을 만드는 과정에 관심이 있습니다.
+        </p>
+        <div class="tag-list">
+          <span class="tag">AI 소프트웨어</span>
+          <span class="tag">Python</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Web Frontend</span>
+          <span class="tag">Team Project</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="mini-card">
+          <h3>Programming</h3>
+          <p>Python, Java, JavaScript, HTML, CSS</p>
+        </div>
+        <div class="mini-card">
+          <h3>AI / Vision</h3>
+          <p>OpenCV, YOLO, OCR, 데이터 전처리</p>
+        </div>
+        <div class="mini-card">
+          <h3>Web / Backend</h3>
+          <p>JSP, Servlet, FastAPI, Streamlit</p>
+        </div>
+        <div class="mini-card">
+          <h3>Tools</h3>
+          <p>VSCode, Eclipse, GitHub, MySQL, Ubuntu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+
+      <div class="mini-card">
+        <div class="project-title">차량 번호판 인식 프로젝트</div>
+        <p>
+          영상에서 차량 번호판을 탐지하고 OCR로 번호를 인식하는 프로젝트입니다.
+          YOLO 기반 번호판 검출, Crop 처리, OCR 인식, CSV 저장 및 GUI 연동을 목표로 진행했습니다.
+        </p>
+        <ul>
+          <li>역할: 전처리, 영상 입출력, GUI 보조, 발표 준비</li>
+          <li>기술: Python, OpenCV, YOLO, EasyOCR, PySide6</li>
+          <li>주요 고민: 탐지 깜빡임, 원거리/빛반사 환경, FPS 개선</li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="mini-card">
+        <div class="project-title">데이터 품질 진단 대시보드</div>
+        <p>
+          CSV 데이터를 업로드하면 결측치, 중복, 형식 오류 등 품질 지표를 분석하고
+          대시보드로 시각화하는 프로젝트입니다.
+        </p>
+        <ul>
+          <li>기술: Python, pandas, FastAPI, Streamlit, MySQL</li>
+          <li>기능: 데이터 진단, 점수 계산, 결과 저장, 이력 조회</li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="mini-card">
+        <div class="project-title">개인 맞춤 영양제 추천 웹사이트</div>
+        <p>
+          사용자의 건강 고민, 생활패턴, 섭취 편의성 등을 기반으로 영양제를 추천하는
+          멀티페이지 웹사이트를 기획하고 구현했습니다.
+        </p>
+        <ul>
+          <li>기술: HTML, CSS, JavaScript</li>
+          <li>기능: 추천 폼, 결과 페이지, 찜/장바구니 페이지</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="goal">
+    <div class="card">
+      <h2>Career Goal</h2>
+      <p>
+        저는 AI와 데이터 기술을 활용해 실제 문제를 해결하는 실무형 인재로 성장하고 싶습니다.
+        현재는 컴퓨터 비전, 데이터 분석, 웹 서비스 구현 경험을 바탕으로
+        AI 서비스 개발, 데이터 분석, 전산/ERP 운영, 품질 데이터 관리 분야로 진로를 확장하고 있습니다.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>이메일: your-email@example.com</p>
+      <p>GitHub: https://github.com/your-github</p>
+      <p>Portfolio: 준비 중</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Yang Jinhee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

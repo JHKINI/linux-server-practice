@@ -20,6 +20,7 @@
 | 3 | [03-apache-web-server](03-apache-web-server) | Apache 설치·서비스 관리, **UserDir(`public_html`)로 자기소개 홈페이지 띄우기**, 웹 문서 권한 설정 |
 | 4 | [04-process-service](04-process-service) | `ps`·`kill`·시그널, 백그라운드 작업, **`crontab` 예약 실행, `systemd`·`systemctl` 서비스 관리**, `shutdown` |
 | 5 | [05-package-disk-archive](05-package-disk-archive) | `apt-get`, `/etc/fstab`, `fdisk`, **`tar` 압축·해제** |
+| 특강 | [06-server-hosting-maintenance](06-server-hosting-maintenance) | 실무 유지보수 특강: 호스팅 종류, **IP·도메인·DNS, 리버스 프록시, 포트포워딩·터널링**, SSH 보안, HTTPS·SSL |
 | 6 | MariaDB | 설치와 서비스 관리, 서버 설정 *(명령 기록 정리 예정)* |
 | 7 | Samba · Network | Samba 버전 확인, 네트워크 인터페이스·IP 주소 확인 *(명령 기록 정리 예정)* |
 
@@ -38,5 +39,6 @@ linux-server-practice/
 ├── 03-apache-web-server/      Apache · public_html 자기소개 페이지
 ├── 04-process-service/        프로세스 · 시그널 · crontab · systemd
 ├── 05-package-disk-archive/   apt · fstab · fdisk · tar
+├── 06-server-hosting-maintenance/  호스팅 · DNS · 터널링 · HTTPS (실무 유지보수 특강)
 └── notes/                     리눅스 손필기 사진
 ```

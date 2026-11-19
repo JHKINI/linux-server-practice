@@ -40,5 +40,6 @@ linux-server-practice/
 ├── 04-process-service/        프로세스 · 시그널 · crontab · systemd
 ├── 05-package-disk-archive/   apt · fstab · fdisk · tar
 ├── 06-server-hosting-maintenance/  호스팅 · DNS · 터널링 · HTTPS (실무 유지보수 특강)
+├── 07-docker-deploy-3-methods/ 서버에 docker 배포 · Docker compose
 └── notes/                     리눅스 손필기 사진
 ```
